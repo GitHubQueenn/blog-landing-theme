@@ -10,6 +10,10 @@ body.landing-page {
         display: none;
       }
     }
+/* .mobile-header .menu {
+  background-color: #969696 !important;
+      height: min-content;
+    } */
     
     .topic-list {
       grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
@@ -22,6 +26,14 @@ body.landing-page {
       }
     }
   }
+
+  .canvas {
+    padding: 0.8em !important;
+}
+
+  .bull {
+    display:none
+    }
 
   &.blog-post {
     header {
@@ -37,13 +49,19 @@ body.landing-page {
     }
     
     .title-container {
-      min-height: unset;
-      margin-top: 4em;
+      background: no-repeat center/cover;
+      display: flex;
+      flex-direction: column;
+      min-height: 380px;
+      max-height: 40%;
+      justify-content: flex-end;
+      align-items: center;
 
       .title {
+        font-size: 2.0em !important;
         width: 100%;
         text-align: center;
-        margin: 0 0 1em 0;
+/*         margin: 0 0 1em 0; */
       }
 
       .topic-byline {

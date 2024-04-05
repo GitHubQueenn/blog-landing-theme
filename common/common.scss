@@ -1,9 +1,37 @@
 @import "common/base/topic-post";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+* {
+  color: #ffffff
+}
+body.landing-page .topic-byline .link {
+display:none
+}
+.landing-header {
+display:none
+}
+/* .landing-header {
+  display:none
+} */
+.forum-button {
+display:none
+} 
+.login-button {
+  display: none
+}
+/* .login-button {
+  display: flex;
+  justify-content: center;
+  column-gap: 0.7em;
+} */
+
+header.landing-header {
+  background-color: #3e3e3e !important;
+}
+
 body.blog,
 body.blog-post {
-  background-color: #e7eae9;
+  background-color: #18191a;
   font-family: 'Montserrat', sans-serif;
 
   h1 {
@@ -12,7 +40,7 @@ body.blog-post {
 
   a {
     text-decoration: none;
-    color: $primary;
+    color: #6abeff
   }
 
   .btn {
@@ -135,14 +163,14 @@ body.blog-post {
 
     .fixed-icon {
       svg {
-        fill: $secondary;
+        fill: $primary;
       }
     }
   }
 }
 
 body.blog {
-  padding-top: 8em;
+/*   padding-top: 8em; */
 
   .blog-title {
     text-align: center;
@@ -309,16 +337,20 @@ body.blog-post {
 
   .canvas {
     background: $secondary;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, .10);
+    box-shadow: 1px -5px 6px 1px #000000f0 !important;
     padding: 2em;
     box-sizing: border-box;
-  }
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+}
 
   .title-container {
-    background-color: $tertiary;
+    background: no-repeat center/cover;
     display: flex;
     flex-direction: column;
-    min-height: 600px;
+    min-height: 380px;
     max-height: 40%;
     justify-content: flex-end;
     align-items: center;
@@ -450,6 +482,7 @@ body.blog-post {
   .post-content {
     border-top: 1px solid $primary-low;
     padding-top: 1em;
+    min-width: 100%;
     word-spacing: 0.25em;
     display: flex;
     flex-direction: column;
