@@ -2,6 +2,11 @@
   "name": "Blog Landing Theme",
   "about_url": "/",
   "license_url": "/",
-  "assets": {},
+  "assets": {
+    "montserrat-reg": "assets/montserrat-v26-latin-regular.woff2",
+    "montserrat-ita": "assets/montserrat-v26-latin-italic.woff2",
+    "montserrat-700": "assets/montserrat-v26-latin-700.woff2",
+    "montserrat-900": "assets/montserrat-v26-latin-900.woff2"
+},
   "color_schemes": {}
 }
